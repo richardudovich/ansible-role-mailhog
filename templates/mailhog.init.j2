@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # /etc/init.d/mailhog
 #
 # MailHog init script.
@@ -18,8 +18,8 @@
 PID=/var/run/mailhog.pid
 LOCK=/var/lock/mailhog.lock
 USER=nobody
-BIN={{ mailhog_install_dir }}/mailhog
-DAEMONIZE_BIN={{ mailhog_daemonize_bin_path }}
+BIN=/usr/sbin/mailhog/mailhog
+DAEMONIZE_BIN=/usr/sbin/daemonize
 
 # Carry out specific functions when asked to by the system
 case "$1" in
