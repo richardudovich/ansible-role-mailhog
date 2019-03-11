@@ -20,6 +20,7 @@ LOCK=/var/lock/mailhog.lock
 USER=nobody
 BIN=/usr/sbin/mailhog
 DAEMONIZE_BIN=/usr/sbin/daemonize
+BIND="-ui-bind-addr=0.0.0.0:8025 -api-bind-addr=0.0.0.0:8025 -smtp-bind-addr=0.0.0.0:1025"
 
 # Carry out specific functions when asked to by the system
 case "$1" in
